@@ -9,7 +9,7 @@ export default function Profile() {
   return (
     <main className="min-h-screen bg-gray-50 py-10">
       <div className="mx-auto max-w-5xl space-y-10 rounded-xl bg-white p-8 shadow-lg">
-        {/* Profile Section */}
+        
         <div className="relative">
           <div className="absolute right-0 top-0 flex items-center gap-2">
             <Progress value={90} className="w-[100px]" />
@@ -36,7 +36,7 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Introduce Yourself Section */}
+        
         <div className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-semibold text-gray-900">Introduce Yourself</h2>
@@ -61,7 +61,7 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Explore Section */}
+        
         <div className="space-y-6">
           <h2 className="text-xl font-semibold text-gray-900">Explore Keka</h2>
           <p className="text-sm text-gray-500">Explore all things you can do in Keka</p>

@@ -30,10 +30,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex flex-col h-screen">
-          <Navbar /> {/* Navbar stays at the top */}
+          <Navbar /> 
           <div className="flex flex-1">
-            <Sidebar /> {/* Sidebar stays on the left */}
-            <main className="flex-1 overflow-auto pl-16">{children}</main> {/* Content takes the rest of the space */}
+            <Sidebar /> 
+            <main className="flex-1 overflow-auto pl-16">{children}</main> 
           </div>
         </div>
       </body>

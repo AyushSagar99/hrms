@@ -15,7 +15,6 @@ export default function Access() {
     hour12: true
   }))
 
-  // Update the clock every second
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString('en-US', {
@@ -26,15 +25,15 @@ export default function Access() {
       }))
     }, 1000)
 
-    return () => clearInterval(interval) // Cleanup interval on component unmount
+    return () => clearInterval(interval) 
   }, [])
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Column */}
+        
         <div className="flex flex-col flex-1 gap-6">
-          {/* Quick Access */}
+         
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
@@ -57,7 +56,7 @@ export default function Access() {
             </CardContent>
           </Card>
 
-          {/* Holiday Card */}
+          
           <Card className="bg-red-500 text-white">
             <CardContent className="p-6">
               <div className="flex justify-between items-center">
@@ -73,7 +72,6 @@ export default function Access() {
             </CardContent>
           </Card>
 
-          {/* Time Today */}
           <Card className="bg-purple-100">
             <CardHeader>
               <CardTitle className="text-lg flex items-center justify-between">
@@ -91,9 +89,8 @@ export default function Access() {
           </Card>
         </div>
 
-        {/* Right Column */}
         <div className="flex flex-col flex-1 gap-6">
-          {/* Social Feed */}
+       
           <Card>
             <CardContent className="p-6">
               <div className="flex gap-4 mb-6">
@@ -108,7 +105,6 @@ export default function Access() {
                 </Button>
               </div>
 
-              {/* Announcements */}
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <h3 className="font-medium">Announcements</h3>
@@ -119,7 +115,6 @@ export default function Access() {
                   <CardContent className="p-4">
                     <div className="flex gap-4">
                       <div className="flex-shrink-0">
-                        {/* Placeholder illustration */}
                         <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center">
                           <Gift className="h-8 w-8 text-muted-foreground" />
                         </div>
@@ -143,7 +138,6 @@ export default function Access() {
             </CardContent>
           </Card>
 
-          {/* Birthdays & Anniversaries */}
           <Card>
             <CardContent className="p-6">
               <div className="flex gap-4 border-b pb-4">

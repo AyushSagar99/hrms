@@ -17,7 +17,7 @@ export default function SetupDashboard() {
         </TabsList>
 
         <TabsContent value="setup" className="space-y-6">
-          {/* Core Setup Section */}
+          
           <div className="space-y-4">
             <h2 className="text-xl font-semibold">Core Setup</h2>
             <Progress value={100} className="h-2" />

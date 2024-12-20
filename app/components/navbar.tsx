@@ -30,7 +30,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Right Section */}
+        
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Avatar className="cursor-pointer">
@@ -48,10 +48,7 @@ function Navbar() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-
-      {/* Adding space for content below the fixed navbar */}
-      <div className="pt-16"> {/* Adjust this value to match the height of your navbar */}
-        {/* Content goes here */}
+      <div className="pt-16"> 
       </div>
     </>
   );

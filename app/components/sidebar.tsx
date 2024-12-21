@@ -13,7 +13,7 @@ import { TiMessages } from 'react-icons/ti';
 function Sidebar() {
   const menuItems = [
     { name: 'Home', icon: <FaHome />,path:'/' },
-    { name: 'Me', icon: <FaUser /> },
+    { name: 'Me', icon: <FaUser />, path:'/me' },
     { name: 'Inbox', icon: <FaInbox />, path: '/inbox' }, // Added `path` for Inbox
     { name: 'Teams', icon: <IoIosPeople /> },
     { name: 'Finances', icon: <RiMoneyDollarCircleFill /> },

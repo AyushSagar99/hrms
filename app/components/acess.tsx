@@ -5,6 +5,8 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Clock, Gift, MessageSquarePlus, PlusCircle, ThumbsUp } from 'lucide-react';
+import { useRouter } from 'next/navigation'
+
 
 
 export default function Access() {
@@ -27,6 +29,14 @@ export default function Access() {
 
     return () => clearInterval(interval) 
   }, [])
+
+  
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/inbox"); 
+  };
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
@@ -51,7 +61,7 @@ export default function Access() {
                     Tasks waiting for your approval. Please click on take action for more details.
                   </p>
                 </div>
-                <Button>Take Action</Button>
+                <Button onClick={handleClick} >Take Action</Button>
               </div>
             </CardContent>
           </Card>

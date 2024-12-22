@@ -14,8 +14,8 @@ function Sidebar() {
   const menuItems = [
     { name: 'Home', icon: <FaHome />,path:'/' },
     { name: 'Me', icon: <FaUser />, path:'/me' },
-    { name: 'Inbox', icon: <FaInbox />, path: '/inbox' }, // Added `path` for Inbox
-    { name: 'Teams', icon: <IoIosPeople /> },
+    { name: 'Inbox', icon: <FaInbox />, path: '/inbox' }, 
+    { name: 'Teams', icon: <IoIosPeople />, path:'/team' },
     { name: 'Finances', icon: <RiMoneyDollarCircleFill /> },
     { name: 'Org', icon: <GoOrganization /> },
     { name: 'Engage', icon: <TiMessages /> },
